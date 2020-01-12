@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    color: #23252d;
+    background: #0B2340;
+    font-family: 'Open Sans', sans-serif, Arial;
+}
+
+#logo {
+    margin-left: 620px;
+    width: 25%;
+    background-color: white;
+    padding-left: 2.5px;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    margin-bottom: 6px;
+    line-height: 1;
+    color: #800805;
+    font-family: 'Bebas Neue', cursive;
+}
+p {
+    margin: 0;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+h2 {
+    font-size: 1.8em;
+    font-family: 'Bebas Neue', cursive;
+}
+header, main, footer {
+    margin: 0 12px;
+    max-width: 940px;
+}
+
+nav {
+    background-color: #203739;
+    margin-top: -80px;
+    width: 100%;
+}
+nav ul {
+    margin: 0;
+    padding-left: 125px;
+    display: flex;
+    flex-flow: column wrap;
+}
+nav li {
+    list-style-type: none;
+}
+nav a, nav label {
+    font-size: 1.2em;
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    margin: 0 auto;
+    padding: 12px 0;
+    max-width: 960px;
+    background-color: #ffffff;
+}
+
+section {
+    padding: 12px 0;
+}
+section div {
+    padding: 12px;
+}
+
+footer {
+    padding: 12px;
+}
+footer p {
+    margin: 12px 0;
+}
+nav label {
+    margin-left: 125px;
+}
+
+.dark {
+    color: white;
+    background-color: #203739;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.center {
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    nav label {
+        display: none;
+    }
+
+    #toggle[type=checkbox] ~ ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    footer {
+        padding: 0;
+        padding-left: 12px;
+        max-height: 55px;
+        flex-flow: row wrap;
+    }
+    .flex {
+        flex-flow: row wrap;
+    }
+    .col-33 {width: 33%;}
+    .col-66 {width: 66%;}
+    .col-50 {width: 50%;}
+    .col-1 {width: 100%;}
+    .flex-1 {flex: 1;}
+    .flex-2 {flex: 2;}
+    .flex-3 {flex: 3;}
+}
