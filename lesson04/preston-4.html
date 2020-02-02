@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My weather website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weather.js"></script>
+</head>
+<body onload="currentDate()">
+<div id="content">
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Dry Oar boating logo" />
+        </div>
+        <section id="logoName">
+            <h2>All Idaho Weathers</h2>
+            <h3>The weather site!!!</h3>
+        </section>
+    </header>
+    <nav>
+        <label for="toggle"><img style="width: 30%;" src="images/hamburguer.png" /> </label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="preston-4.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Fish Haven</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- First Row -->
+        <section class="flex center">
+            <div class="col-50">
+                <h2 class="home-headline-1">Preston Idaho</h2>
+                <hr>
+                <p class="home-paragraph-1">ipsum dolor sit amet consectetur adipisicing elit. Odit eum cupiditate voluptatum? Delectus assumenda tenetur facere.
+                    Totam doloribus laborum inventore quibusdam incidunt dicta eligendi impedit cumque aspernatur autem, in at. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-50">
+                <img src="images/preston.jpg" alt="Preston City" />
+            </div>
+        </section>
+    </main>
+    <footer class="flex dark center">
+        <div id="copyright" class="white-text"><p id="currentDate">&copy; 2020 My weather website</p></div>
+        <div id="social">
+            <div class="social">
+                <a href="#" target="_blank"> <img src="images/social.png" /> </a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
