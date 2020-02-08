@@ -4,7 +4,9 @@
     <title>My weather website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script src="js/weather.js"></script>
 </head>
 <body onload="currentDate()">
@@ -31,6 +33,21 @@
         </ul>
     </nav>
     <main>
+
+        <div class="banner-box">
+            <img class="banner" src="images/clouds-hero.jpg" alt="banner" />
+            <div id="summary">
+                <h3>Weather Summary</h3>
+                <hr>
+                <h5>Current Weather:</h5>
+                <p>Cloudy: 38 F</p>
+            </div>
+        </div>
+        <div class="city-name"><h2>Preston</h2></div>
+        <div class="five-day">
+            <h2>5 Day Forecast</h2>
+            <img src="images/five-day-forecast.png" alt="five day" />
+        </div>
         <!-- First Row -->
         <section class="flex center">
             <div class="col-50">
@@ -41,6 +58,19 @@
             </div>
             <div class="col-50">
                 <img src="images/preston.jpg" alt="Preston City" />
+            </div>
+        </section>
+        <hr>
+        <!-- Contact information -->
+        <section class="flex center">
+            <div class="col-50">
+                <img src="images/contact-information.jpeg" alt="Preston City" />
+            </div>
+            <div class="col-50">
+                <h2 class="home-headline-1">Contact Information</h2>
+                <hr>
+                <p class="home-paragraph-1">ipsum dolor sit amet consectetur adipisicing elit. Odit eum cupiditate voluptatum? Delectus assumenda tenetur facere.
+                    Totam doloribus laborum inventore quibusdam incidunt dicta eligendi impedit cumque aspernatur autem, in at. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
     </main>
