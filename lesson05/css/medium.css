@@ -3,14 +3,6 @@
 
 @media only screen and (min-width:32em) {
 
-    h1,h2,h3,h4,h5,h6 {
-        margin: 0;
-        margin-bottom: 6px;
-        line-height: 1;
-        color: #392be9;
-        font-family: 'Bebas Neue', cursive;
-    }
-
     .small{
         display: block;
     }

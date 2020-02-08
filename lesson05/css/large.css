@@ -49,13 +49,6 @@
         border-radius: 5px;
     }
 
-    h1,h2,h3,h4,h5,h6 {
-        margin: 0;
-        margin-bottom: 6px;
-        line-height: 1;
-        color: #e9b2bc;
-        font-family: 'Bebas Neue', cursive;
-    }
     p {
         margin: 0;
         margin-bottom: 12px;
