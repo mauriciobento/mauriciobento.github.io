@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My weather website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body onload="currentDate(); popupAside(); windChillCalculation()">
+<div>
+    <aside>
+        <div id="banner-aside">
+            <div>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        </div>
+    </aside>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo weather" />
+        </div>
+        <section id="logoName">
+            <h2>All Idaho Weathers</h2>
+            <h3>The weather site!!!</h3>
+        </section>
+    </header>
+    <nav>
+        <label for="toggle"><img style="width: 30%;" src="images/hamburguer.png" /> </label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="preston-6.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Fish Haven</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <div class="city-name"><h2>Preston</h2></div>
+        <div class="banner-box">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/small.jpg">
+                <source media="(max-width: 800px)" srcset="images/medium.jpg">
+                <img src="images/large.jpg" alt="Preston Weather">
+            </picture>
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <h5>Current Weather:</h5>
+                <p class="label-summary">Currently:</p>
+                <p class="value-summary">Sunny</p>
+                <p class="label-summary">High:</p>
+                <p class="value-summary"><span id="temperature">76</span> F</p>
+                <p class="label-summary">Wind Chill:</p>
+                <p class="value-summary"><span id="windchill"></span></p>
+                <p class="label-summary">Humidity:</p>
+                <p class="value-summary">69%</p>
+                <p class="label-summary">Wind Speed:</p>
+                <p class="value-summary"><span id="windSpeed">5</span> mph</p>
+            </div>
+        </div>
+        <div class="five-day">
+            <h3>5 Day Forecast</h3>
+            <div>
+                <h4>Mon</h4>
+                <img src="images/sun.png">
+                <p>89 F</p>
+            </div>
+            <div>
+                <h4>Tue</h4>
+                <img src="images/sun.png">
+                <p>90 F</p>
+            </div>
+            <div>
+                <h4>Wed</h4>
+                <img src="images/tornado.png">
+                <p>50 F</p>
+            </div>
+            <div>
+                <h4>Thu</h4>
+                <img src="images/winter.png">
+                <p>57 F</p>
+            </div>
+            <div>
+                <h4>Fri</h4>
+                <img src="images/winter.png">
+                <p>70 F</p>
+            </div>
+        </div>
+        <!-- First Row -->
+        <section class="flex center">
+            <div class="col-50">
+                <h2 class="home-headline-1">Preston Idaho</h2>
+                <hr>
+                <p class="home-paragraph-1">ipsum dolor sit amet consectetur adipisicing elit. Odit eum cupiditate voluptatum? Delectus assumenda tenetur facere.
+                    Totam doloribus laborum inventore quibusdam incidunt dicta eligendi impedit cumque aspernatur autem, in at. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-50">
+                <img src="images/preston.jpg" alt="Preston City" />
+            </div>
+        </section>
+        <hr>
+        <!-- Contact information -->
+        <section class="flex center">
+            <div class="col-50 small">
+                <img src="images/contact-information.jpeg" alt="Preston City" />
+            </div>
+            <div class="col-50">
+                <h2 class="home-headline-1">Contact Information</h2>
+                <hr>
+                <p class="home-paragraph-1">ipsum dolor sit amet consectetur adipisicing elit. Odit eum cupiditate voluptatum? Delectus assumenda tenetur facere.
+                    Totam doloribus laborum inventore quibusdam incidunt dicta eligendi impedit cumque aspernatur autem, in at. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex dark">
+        <div id="copyright"><p id="currentDate">&copy; 2020 My weather website</p></div>
+        <div id="social">
+            <div class="social">
+                <a href="#" target="_blank"> <img src="images/social.png" /> </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
