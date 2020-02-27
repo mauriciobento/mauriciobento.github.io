@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif, Arial;
+}
+
+table.buildTable {
+    border: 1px solid #1C6EA4;
+    background-color: #E7F0ED;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.buildTable td, table.buildTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 5px;
+}
+table.buildTable tbody td {
+    font-size: 15px;
+}
+table.buildTable tr:nth-child(even) {
+    background: #E7FFED;
+}
+table.buildTable thead {
+    background: #7FB9C2;
+}
+table.buildTable thead .subHeader{
+    background: #628CA6;
+    color: #FFFFFF;
+}
+table.buildTable thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+table.buildTable tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    background: #7FB9C2;
+}
+table.buildTable tfoot td {
+    font-size: 10px;
+}
