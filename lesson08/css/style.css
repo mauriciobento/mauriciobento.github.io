@@ -19,10 +19,10 @@ table.buildTable tbody td {
 table.buildTable tr:nth-child(even) {
     background: #E7FFED;
 }
-table.buildTable thead {
+table.buildTable thead th {
     background: #7FB9C2;
 }
-table.buildTable thead .subHeader{
+table.buildTable th{
     background: #628CA6;
     color: #FFFFFF;
 }
@@ -41,3 +41,9 @@ table.buildTable tfoot {
 table.buildTable tfoot td {
     font-size: 10px;
 }
+
+.goal{
+    background: #628CA6;
+    color: #FFFFFF;
+}
+
