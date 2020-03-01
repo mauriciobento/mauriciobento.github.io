@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My weather website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body onload="currentDate(); popupAside();">
+<div>
+    <aside>
+        <div id="banner-aside">
+            <div>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        </div>
+    </aside>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo weather" />
+        </div>
+        <section id="logoName">
+            <h2>All Idaho Weathers</h2>
+            <h3>The weather site!!!</h3>
+        </section>
+    </header>
+    <nav>
+        <label for="toggle"><img style="width: 30%;" src="images/hamburguer.png" alt="hamburger"/> </label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="preston-7.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <fieldset>
+            <section class="flex center">
+                <div class="col-1">
+                    <h1>Thank you!</h1>
+                    <hr>
+                </div>
+            </section>
+        </fieldset>
+    </main>
+    <footer class="flex dark">
+        <div id="copyright"><p id="currentDate">&copy; 2020 My weather website</p></div>
+        <div id="social">
+            <div class="social">
+                <a href="#" target="_blank"> <img src="images/social.png" alt="social media"/> </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/lazyLoad.js"></script>
+</body>
+</html>
