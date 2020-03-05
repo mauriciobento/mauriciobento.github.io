@@ -1,0 +1,111 @@
+*, *:before, *:after {box-sizing: border-box;} /* Box Sizing Fix */
+
+img {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    color: #23252d;
+    background: #e1f2fb;
+    font-family: 'Open Sans', sans-serif, Arial;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    margin-bottom: 6px;
+    line-height: 1;
+    color: #e9b2bc;
+    font-family: 'Bebas Neue', cursive;
+}
+p {
+    margin: 0;
+    margin-bottom: 12px;
+    line-height: 1;
+    font-size: 18px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+main {
+    padding: 12px 0;
+    max-width: 960px;
+    background-color: #ffffff;
+    margin: 1rem auto;
+}
+
+section{
+    padding: 10px;
+    margin: 5px;
+    background-color: #f8f8f8;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.cards div { grid-area: 1 / 1 / 2 / 5; }
+
+@media only screen and (min-width:32em) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 12px;
+        line-height: 1;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width:60em) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        font-family: 'Bebas Neue', cursive;
+        padding-bottom: 5px;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 12px;
+        line-height: 1;
+        font-size: 12px;
+    }
+}
+
+
+
