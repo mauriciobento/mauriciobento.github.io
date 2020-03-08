@@ -13,6 +13,24 @@ body {
     font-family: 'Open Sans', sans-serif, Arial;
 }
 
+.towns h2{
+    text-align: center;
+}
+
+.towns h3{
+    text-align: center;
+}
+
+.towns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.towns div { grid-area: 1 / 1 / 2 / 5; }
+
 .summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,6 +65,7 @@ body {
     position: relative;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
+    margin-bottom: 0;
 }
 
 #logoName{
@@ -66,6 +85,7 @@ p {
     margin: 0;
     margin-bottom: 12px;
     line-height: 1;
+    text-align: center;
 }
 h2 {
     font-size: 1.8em;

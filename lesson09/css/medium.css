@@ -3,6 +3,34 @@
 
 @media only screen and (min-width:32em) {
 
+    div.towns img {
+        width: 380px;
+    }
+
+    .towns {
+        margin: .5rem auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .towns p{
+        font-size: 13px;
+    }
+
+    .towns img{
+        text-align: center;
+        padding: 10px 5px;
+    }
+
     .small{
         display: block;
     }
@@ -40,32 +68,34 @@
         background: radial-gradient(white, #e1f2fb);
     }
 
-    @media screen and (min-width: 600px) {
-        nav label {
-            display: none;
-        }
-
-        #toggle[type=checkbox] ~ ul {
-            display: flex;
-            flex-flow: row wrap;
-        }
-        footer {
-            padding: 0;
-            padding-left: 12px;
-            max-height: 55px;
-            flex-flow: row wrap;
-        }
-        .flex {
-            flex-flow: row wrap;
-        }
-        .col-33 {width: 50%;}
-        .col-66 {width: 66%;}
-        .col-50 {width: 50%;}
-        .col-1 {width: 100%;}
-        .flex-1 {flex: 1;}
-        .flex-2 {flex: 2;}
-        .flex-3 {flex: 3;}
+    nav label {
+        display: none;
     }
+
+    #logo {
+        margin-bottom: 25px;
+    }
+
+    #toggle[type=checkbox] ~ ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    footer {
+        padding: 0;
+        padding-left: 12px;
+        max-height: 55px;
+        flex-flow: row wrap;
+    }
+    .flex {
+        flex-flow: row wrap;
+    }
+    .col-33 {width: 50%;}
+    .col-66 {width: 66%;}
+    .col-50 {width: 50%;}
+    .col-1 {width: 100%;}
+    .flex-1 {flex: 1;}
+    .flex-2 {flex: 2;}
+    .flex-3 {flex: 3;}
 
 }
 
