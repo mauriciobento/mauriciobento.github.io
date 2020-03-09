@@ -69,7 +69,7 @@ function buildTowns() {
                     card.appendChild(div);
 
                     image.setAttribute('src', "images/" +town[i].photo);
-                    //image.setAttribute('alt', town[i].name);
+                    image.setAttribute('alt', town[i].name);
                     card.appendChild(image);
 
                     document.querySelector('div.towns').appendChild(card);
