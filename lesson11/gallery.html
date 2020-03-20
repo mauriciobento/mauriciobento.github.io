@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My weather website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body onload="currentDate(); popupAside();">
+<div>
+    <aside>
+        <div id="banner-aside">
+            <div>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        </div>
+    </aside>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo weather" />
+        </div>
+        <section id="logoName">
+            <h2>All Idaho Weathers</h2>
+            <h3>The weather site!!!</h3>
+        </section>
+    </header>
+    <nav>
+        <label for="toggle"><img style="width: 30%;" src="images/hamburguer.png" alt="hamburger"/> </label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <div class="city-name"><h2>Weather Gallery</h2></div>
+
+        <section class="flex center">
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/bodywater.jpg" alt="body of water during golden hour" />
+                </picture>
+                <p>Body of water during golden hour.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/concrete.jpg" alt="concrete" />
+                </picture>
+                <p>Concrete buildings during daytime.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/white.jpg" alt="white" />
+                </picture>
+                <p>white clouds.</p>
+            </div>
+
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/green.jpg" alt="green" />
+                </picture>
+                <p>Green bush during rainy day.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/plume.jpg" alt="plume" />
+                </picture>
+                <p>Plume of orange clouds at sunset.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/gray.jpg" alt="gray" />
+                </picture>
+                <p>Grayscale photo of house under cloudy sky.</p>
+            </div>
+
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/fogs.jpg" alt="fogs" />
+                </picture>
+                <p>Green field surrounded with fogs.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/man.jpg" alt="man" />
+                </picture>
+                <p>Man in black jacket carrying black and white backpacky.</p>
+            </div>
+            <div class="col-33 box-shadow">
+                <picture>
+                    <img src="images/placeholder.png" data-src="images/city.jpg" alt="city" />
+                </picture>
+                <p>Architectural photography of city houses.</p>
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="flex dark">
+        <div id="copyright"><p id="currentDate">&copy; 2020 My weather website</p></div>
+        <div id="social">
+            <div class="social">
+                <a href="#" target="_blank"> <img src="images/social.png" alt="social media"/> </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/lazyLoad.js"></script>
+</body>
+</html>

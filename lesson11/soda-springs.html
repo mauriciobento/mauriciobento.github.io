@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My weather website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/loadJson.js"></script>
+</head>
+<body onload="buildSummary('5607916');currentDate(); popupAside(); windChillCalculation();">
+<div>
+    <aside>
+        <div id="banner-aside">
+            <div>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        </div>
+    </aside>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Logo weather" />
+        </div>
+        <section id="logoName">
+            <h2>All Idaho Weathers</h2>
+            <h3>The weather site!!!</h3>
+        </section>
+    </header>
+    <nav>
+        <label for="toggle"><img style="width: 30%;" src="images/hamburguer.png" alt="hamburger"/> </label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <div class="city-name"><h2>Soda Springs</h2></div>
+        <div class="banner-box">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/soda_spring_medium.jpg">
+                <source media="(max-width: 800px)" srcset="images/soda_spring_medium.jpg">
+                <img src="images/soda_spring_large.png" alt="Soda Springs Weather">
+            </picture>
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <h5>Current Weather:</h5>
+                <p class="label-summary">Currently:</p>
+                <p class="value-summary"><span id="current"></span></p>
+                <p class="label-summary">High:</p>
+                <p class="value-summary"><span id="temperature"></span> F</p>
+                <p class="label-summary">Wind Chill:</p>
+                <p class="value-summary"><span id="windchill"></span></p>
+                <p class="label-summary">Humidity:</p>
+                <p class="value-summary"><span id="humidity"></span> %</p>
+                <p class="label-summary">Wind Speed:</p>
+                <p class="value-summary"><span id="windSpeed"></span> mph</p>
+            </div>
+        </div>
+        <div class="five-day">
+            <h3>5 Day Forecast</h3>
+        </div>
+        <!-- First Row -->
+        <section class="flex center">
+            <div class="col-50">
+                <h2 class="home-headline-1">Soda Springs - Idaho</h2>
+                <hr>
+                <p class="home-paragraph-1">Soda Springs is a city in Caribou County, Idaho, United States.
+                    Its population was 3,058 at the 2010 census.
+                    The city has been the county seat of Caribou County since the county was organized in 1919. In the
+                    1860s, Soda Springs served as the seat of Oneida County.</p>
+            </div>
+            <div class="col-50">
+                <img src="images/sodasprings.jpg" alt="Soda Springs City" />
+            </div>
+        </section>
+        <hr>
+        <!-- Contact information -->
+        <section class="flex center">
+            <div class="col-50 small">
+                <img src="images/contact-information.jpeg" alt="Soda Springs City" />
+            </div>
+            <div class="col-50">
+                <h2>Contact Information</h2>
+                <hr>
+                <p>Soda Springs is a city in Caribou County, Idaho, United States.
+                    Its population was 3,058 at the 2010 census.
+                    The city has been the county seat of Caribou County since the county was organized in 1919. In the
+                    1860s, Soda Springs served as the seat of Oneida County.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex dark">
+        <div id="copyright"><p id="currentDate">&copy; 2020 My weather website</p></div>
+        <div id="social">
+            <div class="social">
+                <a href="#" target="_blank"> <img src="images/social.png" alt="social media"/> </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
