@@ -74,6 +74,7 @@ function buildTowns() {
 
                     document.querySelector('div.towns').appendChild(card);
                 }
+
             }
         });
 }
@@ -129,5 +130,30 @@ function buildSummary(id) {
                 }
             }
 
+        });
+}
+
+function townsEvents(townInput) {
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    fetch(requestURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            const town = jsonObject['towns'];
+            for (let i = 0; i < town.length; i++ ) {
+                if (town[i].name == townInput) {
+                    let card = document.createElement('section');
+                    let p = document.createElement('p');
+                    let div = document.createElement('div');
+                    for (let e = 0; e <  town[i].events.length; e++ ) {
+                        p = document.createElement('p');
+                        p.textContent = town[i].events[e];
+                        div.appendChild(p);
+                    }
+                    card.appendChild(div);
+                    document.querySelector('div.events').appendChild(card);
+                }
+            }
         });
 }
