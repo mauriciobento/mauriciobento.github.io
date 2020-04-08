@@ -183,12 +183,30 @@ nav label {
     margin-top: 20px;
 }
 
-@media only screen and (max-width : 320px) {
+
+@media only screen and (max-width: 600px) {
 
     .banner-box img {
         display: none;
 
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        font-size: 12px;
+    }
+
+    .cards section{
+        margin: 0px;
+    }
+
+    img {
+        display: block;
+        width: 80%;
+    }
 
 }

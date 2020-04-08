@@ -15,32 +15,42 @@ function buildSummary() {
 }
 
 function buildCards() {
-    const requestURL = '/json/staff.json';
-    alert(requestURL)
+    const requestURL = 'https://mauriciobento.github.io/final/json/staff.json';
     fetch(requestURL)
         .then(function (response) {
             return response.json();
         })
         .then(function (jsonObject) {
-            const prophets = jsonObject['prophets'];
-            for (let i = 0; i < prophets.length; i++ ) {
+            for (let i = 0; i < jsonObject.length; i++ ) {
                 let card = document.createElement('section');
                 let p = document.createElement('p');
                 let h2 = document.createElement('h2');
                 let image = document.createElement('img');
 
-                h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+                h2.textContent = jsonObject[i].firstname + ' ' + jsonObject[i].lastname;
                 card.appendChild(h2);
 
-                p.textContent = 'Date of Birth: ' + prophets[i].birthdate;
+                p.textContent = 'Title: ' + jsonObject[i].title;
                 card.appendChild(p);
 
                 p = document.createElement('p');
-                p.textContent = 'Place of Birth: ' + prophets[i].birthplace;
+                p.textContent = 'Years of experience: ' + jsonObject[i].yearsofexperience;
                 card.appendChild(p);
 
-                image.setAttribute('src', prophets[i].imageurl);
-                image.setAttribute('alt', prophets[i].name+' '+prophets[i].lastname+' - '+prophets[i].order);
+                p = document.createElement('p');
+                p.textContent = 'Certification level: ' + jsonObject[i].certificationlevel;
+                card.appendChild(p);
+
+                p = document.createElement('p');
+                p.textContent = 'Email: ' + jsonObject[i].email;
+                card.appendChild(p);
+
+                p = document.createElement('p');
+                p.textContent = 'About me: ' + jsonObject[i].biography;
+                card.appendChild(p);
+
+                image.setAttribute('src', jsonObject[i].imageurl);
+                image.setAttribute('alt', jsonObject[i].firstname+' '+jsonObject[i].lastname);
                 card.appendChild(image);
 
                 document.querySelector('div.cards').appendChild(card);

@@ -1,4 +1,22 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-width: 992px) {
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 50px;
+    }
+
+    .cards section{
+        margin: 50px;
+    }
 
     .banner-box img {
         grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
