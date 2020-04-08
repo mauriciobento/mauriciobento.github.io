@@ -1,0 +1,42 @@
+[
+   {
+      "@id": "be129",
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "title": "Instructor",
+      "yearsofexperience": "4",
+      "email": "jane.doe@salmonriveradventures.com",
+      "certificationlevel": "Expert - Senior",
+      "biography": "I have been working as an instructor since 2015"
+   },
+   {
+      "@id": "be130",
+      "firstname": "William",
+      "lastname": "Defoe",
+      "title": "Instructor",
+      "yearsofexperience": "5",
+      "email": "william.defoe@salmonriveradventures.com",
+      "certificationlevel": "Expert - Senior",
+      "biography": "I have been working as an instructor since 2011"
+   },
+   {
+      "@id": "be131",
+      "firstname": "Jack",
+      "lastname": "Dee",
+      "title": "Engineering Manager",
+      "yearsofexperience": "8",
+      "email": "jack.dee@salmonriveradventures.com",
+      "certificationlevel": "Expert - Senior",
+      "biography": "I have been working as an instructor since 2013"
+   },
+   {
+      "@id": "be135",
+      "firstname": "Michelle",
+      "lastname": "Michaels",
+      "title": "Management",
+      "yearsofexperience": "18",
+      "email": "michelle.michaels@salmonriveradventures.com",
+      "certificationlevel": "Expert - Senior",
+      "biography": "I have been working as an instructor since 1998"
+   }
+]

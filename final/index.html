@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Salmon River Adventures</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body onload="buildSummary()">
+<div id="content">
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Salmon River Adventures"/>
+        </div>
+        <nav>
+            <label for="toggle"><img style="width: 20%;" src="images/hamburguer.png"/> </label>
+            <input type="checkbox" id="toggle">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="clubs.html">River Guide</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="players.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner-box">
+            <img src="images/banner.jpeg" alt="banner"/>
+            <div class="action">
+                <h2>
+                    High-end adventures, professional and experienced service, safety, and fun.
+                </h2>
+                <button onclick="window.location.href = 'https://w3docs.com';">Click Here!</button>
+            </div>
+        </div>
+        <section class="flex center">
+            <div>
+                <h3>Weather Summary</h3>
+                <h3>Riggins, Idaho</h3>
+            </div>
+            <div>
+                <p>Currently: <span id="current"></span></p>
+            </div>
+            <div>
+                <p>High: <span id="temperature"></span> F</p>
+            </div>
+            <div>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+            <div>
+                <p>Humidity: <span id="humidity"></span> %</p>
+            </div>
+            <div>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </div>
+        </section>
+
+        <section class="flex center">
+            <div class="col-50">
+                <h2>We have the best equipment.</h2>
+                <p>Whitewater is a sport that takes a lot of adrenaline with you. After all, we are
+                    talking about going down rapids from a river. And for that, you need strong current, boats, remotes,
+                    safety equipment, as well as rocks and trees to complete the adventure scene.</p>
+                <p>If you like this sport and want to practice it in incredible landscapes, with
+                    all the support of certified and specialized tourism agencies, see the list with the ideal places
+                    for whitewater</p>
+            </div>
+            <div class="col-50">
+                <img src="images/photo2.jpg" alt="white water"/>
+            </div>
+        </section>
+
+        <section class="flex center">
+            <div class="col-50">
+                <h2>Do you want to know?</h2>
+                <p class="home-paragraph-1">There are several people on board the same vessel, who must row and guide it
+                    following the instructions of the instructor who will also be on the boat.</p>
+                <p>It is a great sport to strengthen relationships, since it takes unity, solidarity
+                    and a lot of teamwork. As it is an extreme sport, it is mandatory to board with life jackets and
+                    helmets.</p>
+                <p>One of the objectives of this practice is to pass through the obstacles existing in the
+                    path, such as rocks, rapids, whirlpools, waterfalls, small and large waves, depending on the
+                    river.</p>
+                <p>The level of difficulty will depend on the experience of the practitioners.
+                    With beginners, it is best to descend into a calmer river with few obstacles. Those with more
+                    experience
+                    choose more challenging places, with several rocks and waterfalls.</p>
+            </div>
+            <div class="col-50">
+                <img src="images/photo3.jpg" alt="white water adventure"/>
+            </div>
+        </section>
+
+        <section class="flex center">
+            <div class="col-50">
+                <h2>A little bit of whitewater, history and curiosities.</h2>
+                <p>A little bit of whitewater, history and curiosities. It was prepared by the well-known
+                    John Wesley Powel. The expeditionary organized a journey down the Colorado River, in the United
+                    States,
+                    in 1869, cataloged as the first record of whitewater descent in the world!</p>
+                <p>The boats for the practice at the time were made of wood, with central oars.
+                    Still in the USA, in 1936, hard wooden boats began to be replaced by inflatables.</p>
+                <p>In 1980 the “self bailer” boats appeared, made of a more resistant and lighter
+                    material. Whitewater has expanded and gained more fans. From the IRF (International Whitewater
+                    Federation),
+                    the first world championship was held in 1999 in South Africa.</p>
+                <p>Whitewater, like all extreme sports, also has its risks. It is a combination of
+                    fear and emotion of going down rapids for the pleasure of being in full contact with adventure in
+                    nature.
+                    To get to the place of descent it is essential to have the required safety equipment and be careful
+                    not
+                    to slip on the wet rocks that give access to the place of descent.</p>
+
+            </div>
+            <div class="col-50">
+                <img src="images/photo4.jpg" alt="river"/>
+            </div>
+        </section>
+
+    </main>
+    <footer class="flex dark center">
+        <div id="copyright" class="white-text"><p>&copy; 2020 Salmon River Adventures</p></div>
+        <div id="social">
+            <div>
+                <a href="http://www.youtube.com" target="_blank"> <img src="images/facebook.png"/> </a>
+                <a href="http://www.twitter.com" target="_blank"> <img src="images/twitter.png"/> </a>
+                <a href="http://www.facebook.com" target="_blank"><img src="images/youtube.png"/></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/baseFile.js"></script>
+</body>
+</html>
