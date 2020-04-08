@@ -8,7 +8,7 @@
       "email": "jane.doe@salmonriveradventures.com",
       "certificationlevel": "Expert - Senior",
       "biography": "I have been working as an instructor since 2015",
-      "imageurl": "/images/jane.jpg"
+      "imageurl": "https://mauriciobento.github.io/final/images/jane.jpg"
    },
    {
       "@id": "be130",
@@ -18,7 +18,8 @@
       "yearsofexperience": "5",
       "email": "william.defoe@salmonriveradventures.com",
       "certificationlevel": "Expert - Senior",
-      "biography": "I have been working as an instructor since 2011"
+      "biography": "I have been working as an instructor since 2011",
+      "imageurl": "https://mauriciobento.github.io/final/images/william.jpg"
    },
    {
       "@id": "be131",
@@ -28,7 +29,8 @@
       "yearsofexperience": "8",
       "email": "jack.dee@salmonriveradventures.com",
       "certificationlevel": "Expert - Senior",
-      "biography": "I have been working as an instructor since 2013"
+      "biography": "I have been working as an instructor since 2013",
+      "imageurl": "https://mauriciobento.github.io/final/images/jack.jpg"
    },
    {
       "@id": "be135",
@@ -38,6 +40,7 @@
       "yearsofexperience": "18",
       "email": "michelle.michaels@salmonriveradventures.com",
       "certificationlevel": "Expert - Senior",
-      "biography": "I have been working as an instructor since 1998"
+      "biography": "I have been working as an instructor since 1998",
+      "imageurl": "https://mauriciobento.github.io/final/images/michelle.jpg"
    }
 ]
