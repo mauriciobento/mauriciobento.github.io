@@ -7,7 +7,8 @@
       "yearsofexperience": "4",
       "email": "jane.doe@salmonriveradventures.com",
       "certificationlevel": "Expert - Senior",
-      "biography": "I have been working as an instructor since 2015"
+      "biography": "I have been working as an instructor since 2015",
+      "imageurl": "/images/jane.jpg"
    },
    {
       "@id": "be130",
